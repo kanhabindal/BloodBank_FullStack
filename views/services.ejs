@@ -1,0 +1,102 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="blood.css">
+	<link rel="stylesheet" type="text/css" href="services.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,900;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@800&family=Roboto+Serif:ital,opsz,wght@0,8..144,900;1,8..144,900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section id="whole">
+		<nav id="main-navigation">
+			<a href="/"><img src="logo.png"></a>
+			<div class="head-content2">
+				<a href="/">Home</a>
+				<a href="/about">About</a>
+				<a href="/services">Services</a>
+			</div>
+			<span class="head-content3">
+				<a href="/contact"><button>Contact</button></a>
+			</span>
+		</nav>
+	<section id ="mid-part">
+	<div class="layer">
+		<button class="open-button" onclick="openForm()">Donate Blood</button>
+		<div class="form-popup" id="myForm">
+  			<form action="/services1" method="post" class="form-container">
+    		<h1>Donate Blood</h1>
+
+    		<label for="name"><b>Name</b></label>
+    		<input type="text" placeholder="Enter Name" name="name" required>
+
+    		<label for="contact"><b>Contact No.</b></label>
+    		<input type="number" placeholder="Enter Contact No." name="contact" required>
+
+    		<label for="email"><b>Email</b></label>
+    		<input type="email" placeholder="Enter Email" name="email" required>
+
+    		<label for="grp"><b>Blood Group</b></label>
+    		<input type="text" placeholder="Enter Blood Group" name="grp" required>
+
+    		<button type="submit" value="Save" class="btn">Save Details</button>
+    		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  			</form>
+		</div>
+
+		<button class="open-button" onclick="openForm2()">Looking For Blood</button>
+		<div class="form-popup" id="myForm2">
+  			<form action="/services2" method="post" class="form-container">
+    		<h1>Looking For Blood</h1>
+
+    		<label for="name"><b>Name</b></label>
+    		<input type="text" placeholder="Enter Name" name="name" required>
+
+    		<label for="contact"><b>Contact No.</b></label>
+    		<input type="number" placeholder="Enter Contact No." name="contact" required>
+
+    		<label for="email"><b>Email</b></label>
+    		<input type="email" placeholder="Enter Email" name="email" required>
+
+    		<label for="grp"><b>Blood Group You Need</b></label>
+    		<input type="text" placeholder="Enter Blood Group" name="grp" required>
+
+    		<label for="unit"><b>Units of Blood Required</b></label>
+    		<input type="number" placeholder="Units" name="unit" required>
+
+    		<button type="submit" value="Save"  class="btn">Save Details</button>
+    		<button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+  			</form>
+		</div>
+
+		<button class="open-button" onclick="openForm3()">Location Nearby</button>
+		<div class="form-popup" id="myForm3">
+			<form action="/location" method="post" class="form-container">
+    		<h1>Find Locations</h1>
+
+    		<label for="loca"><b>Enter Location</b></label>
+    		<input type="text" id = "location" placeholder="Enter location" name="name" required>
+    		<button type="submit" value="Save" id = "loc-find" class="btn">Find</button>
+    		<button type="button" class="btn cancel" onclick="closeForm3()">Close</button>
+    		</form>
+    	</div>
+    	<button id = "submit-home" hidden></button>
+
+	</div>
+	</section>
+	</section>
+	<section id = 'main-lower'>
+		<p>Red Blood cells are stored in refrigerators at 6ºC for up to 42 days. Platelets are stored at room temperature in agitators for up to five days.</p><p>Plasma and cryo are frozen and stored in freezers for up to one year.</p>
+	</section>
+	<footer class="footer-content">
+		<span class="lower-text"> &#169; 2023 <span> Blood Bank System</span> Built By <a href="https://www.linkedin.com/in/kanha-bindal-7b3367254/">Kanha Bindal</a>
+	</footer>
+	<script type="text/javascript" src="services.js"></script>
+	<!-- <script type="text/javascript" src="location.js"></script> -->
+
+</body>
+
+</html>
